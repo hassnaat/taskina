@@ -2,16 +2,18 @@ import "./Checkbox.css";
 
 const Checkbox = ({ checked, onChange }) => {
   return (
-    <label className="checkbox-container">
+    <label
+      className={`checkbox_container ${checked ? "checked_container" : ""}`}
+    >
       <input
         type="checkbox"
         checked={checked}
         onChange={onChange}
-        className="checkbox-input"
+        className="checkbox_input"
       />
       {checked && (
         <svg
-          className="checkbox-checkmark"
+          className="checkbox_checkmark"
           width="19"
           height="14"
           viewBox="0 0 19 14"

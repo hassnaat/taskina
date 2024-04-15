@@ -1,4 +1,4 @@
-.checkbox-container {
+.checkbox_container {
   position: relative;
   display: inline-block;
   width: 23px;
@@ -7,8 +7,10 @@
   border-radius: 6px;
   border: 1px solid lightgrey;
 }
-
-.checkbox-input {
+.checked_container {
+  border: none;
+}
+.checkbox_input {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,7 +21,7 @@
   cursor: pointer;
 }
 
-.checkbox-input:checked + .checkbox-checkmark {
+.checkbox_input:checked + .checkbox_checkmark {
   display: block;
   position: absolute;
   top: 50%;
@@ -32,11 +34,11 @@
   border: 2px solid #007bff;
 }
 
-.checkbox-checkmark {
+.checkbox_checkmark {
   display: none;
   fill: none;
   pointer-events: none;
 }
 
-.checkbox-container:hover .checkbox-input + .checkbox-checkmark {
+.checkbox_container:hover .checkbox_input + .checkbox_checkmark {
 }
