@@ -8,7 +8,7 @@
   border: 1px solid lightgrey;
 }
 .checked_container {
-  border: none;
+  border: none !important;
 }
 .checkbox_input {
   position: absolute;
